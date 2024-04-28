@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 
 export type dataType = {
 	content: ReactNode;
-	typeS: 'img' | 'any' | 'another';
+	typeS: 'type1' | 'type2' | 'type3';
 };
 type DropdownTaskProps<t> = {
 	propData: t[];
