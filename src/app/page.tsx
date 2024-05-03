@@ -1,6 +1,9 @@
 import DropdownTask, { dataType } from './components/DropdownTask';
 import { HiArrowPath } from "react-icons/hi2";
 import CheckboxDemo from './components/CheckboxDemo';
+import SideBar from './components/SideBar';
+import SideBartest from './components/Sidetest';
+import TaskH from './components/task';
 export default function Home() {
 
 const data: dataType[] = [
@@ -16,8 +19,11 @@ const data: dataType[] = [
 ];
 return (
 	<>
-		<DropdownTask propData={data} size="sm" States='Enabled' Position='Middle'/>
-		<DropdownTask propData={data} size="sm" States='Enabled' Position='Middle'/>
+		{/* <DropdownTask propData={data} size="sm" States='Enabled' Position='Middle'/> */}
+		{/* <DropdownTask propData={data} size="sm" States='Enabled' Position='Middle'/> */}
+		{/* <SideBar/> */}
+		{/* <SideBartest/> */}
+		<TaskH/>
 	</>
 );
 }
