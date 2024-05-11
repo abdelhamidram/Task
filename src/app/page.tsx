@@ -1,29 +1,17 @@
-import DropdownTask, { dataType } from './components/DropdownTask';
-import { HiArrowPath } from "react-icons/hi2";
-import CheckboxDemo from './components/CheckboxDemo';
-import SideBar from './components/SideBar';
-import SideBartest from './components/Sidetest';
-import TaskH from './components/task';
-export default function Home() {
+import Description, { DatadescripType } from './components/Description';
 
-const data: dataType[] = [
-	{ content: [[<div key='1'><HiArrowPath className="text-3xl min-h-6 min-w-6"/>
-	<h1 className="font-bold text-2xl leading-7 text-blue-900">Slot component</h1>
-	<p className="text-blue-700">Optional placeholder component. Replace it with any component using the “Component Instance” swapper, or delete if not needed.</p>
-  </div>],[<CheckboxDemo className='mt-1' key='2'/>,<CheckboxDemo className='mt-1' key='2'/>,<CheckboxDemo className='mt-1' key='2'/>,<CheckboxDemo className='mt-1' key='3'/>]], title:'Choose an option' ,typeS: 'any' },
-  
-  { content: [[<div key='1'><HiArrowPath className="text-3xl min-h-6 min-w-6"/>
-	<h1 className="font-bold text-2xl leading-7 text-blue-900">Slot component</h1>
-	<p className="text-blue-700">Optional placeholder component. Replace it with any component using the “Component Instance” swapper, or delete if not needed.</p>
-  </div>],[<CheckboxDemo className='mt-1' key='2'/>,<CheckboxDemo className='mt-1' key='2'/>,<CheckboxDemo className='mt-1' key='2'/>,<CheckboxDemo className='mt-1' key='3'/>]], title:'Choose an option' ,typeS: 'any' }
+const data: DatadescripType[] = [
+	{ content1:{
+		title:['Organisme','Type d’annonce','La Nature Du Marché','Montant De Cahier De Charge','Date de publication','Date de échéance'],
+		text:['Ministère de la Défense Nationale','National et International','Fourniture','10,000,000 DA','2024/03/04','2024/03/12']},
+	  content2:{
+		title:['Pays','Ville','Commune','Adresse','Site Web'],
+		text:['Algérie','Alger','Birtouta','Birtouta- Sidi Mhamed','www.mdn.dz']} ,
+		content3:{title:['Secteur dactivité','Secteur dactivité','Secteur dactivité','Secteur dactivité']},
+		typeS: 'any' }
 ];
+export default function Home() {
 return (
-	<>
-		{/* <DropdownTask propData={data} size="sm" States='Enabled' Position='Middle'/> */}
-		{/* <DropdownTask propData={data} size="sm" States='Enabled' Position='Middle'/> */}
-		{/* <SideBar/> */}
-		{/* <SideBartest/> */}
-		<TaskH/>
-	</>
+	<Description propData={data}/>
 );
 }

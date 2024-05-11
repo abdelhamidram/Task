@@ -3,8 +3,6 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { RiArrowDropDownLine } from "react-icons/ri";
-import { Key } from 'lucide-react';
-import CheckboxDemo from './CheckboxDemo';
 
 export type dataType = {
 	content: ReactNode[][];

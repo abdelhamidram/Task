@@ -11,11 +11,8 @@ import {
 	HiBellAlert,
 	HiChatBubbleLeft,
 } from 'react-icons/hi2';
-// import Button from '../Nhannik-Theme/theme/components/Button';
 import { Button } from "@/components/ui/button"
 import ImageLoader from './ImageLoader';
-
-// import ImageLoader from './Utility/ImageLoader';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
@@ -69,8 +66,7 @@ const SideBar = () => {
 				)
 			) : (
 				<SideBarOpen
-					isRetracted={isRetracted}
-					setIsRetracted={setIsRetracted}
+					isRetracted={isRetracted} setIsRetracted={setIsRetracted}
 				/>
 			)}
 		</main>
